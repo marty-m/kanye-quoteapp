@@ -1,11 +1,23 @@
+
 <br><br>
 <div class="container-sm">
-  "<%= @parsed_response ["quote"] %>"
-  <br>
-  <strong>- Kanye West</strong>
-<br> <br>
-<%= link_to 'Refresh', root_path, class:"btn btn-primary", :method => :get %>
+  <figure class="text-center">
+    <blockquote class="blockquote">
+      <%= @parsed_response ["quote"] %>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Kanye Omari West
+    </figcaption>
+  </figure>
 </div>
+<br> <br>
+
+
+<div class= "col text-center">
+  <%= link_to 'Refresh', root_path, class:"btn btn-primary", :method => :get %>
+</div>
+
+
 
 
 
