@@ -1,2 +1,11 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<br><br>
+<div class="container-sm">
+  "<%= @parsed_response ["quote"] %>"
+  <br>
+  <strong>- Kanye West</strong>
+<br> <br>
+<%= link_to 'Refresh', root_path, class:"btn btn-primary", :method => :get %>
+</div>
+
+
+
