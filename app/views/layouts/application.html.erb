@@ -10,6 +10,22 @@
     <%= stylesheet_link_tag "quotepage" %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+<style>
+  body {
+    background:
+    /* top, transparent black, faked with gradient */
+    linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+    ),
+    /* bottom, image */
+    url(<%= asset_path "kanye#{rand(1..12)}.jpg" %>);
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+</style>
 
   <body>
     <%= yield %>

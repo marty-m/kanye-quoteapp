@@ -1,6 +1,108 @@
-.center {
-    margin: auto;
-    width: 60%;
-    border: 5px solid #ffff00;
-    padding: 10px;
+.center-container {
+    text-align: center;
+
+
+}
+
+.center-square {
+    display: inline-block;
+    word-wrap: normal;
+    width: 1000px;
+
+
+}
+
+
+/* Button CSS */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+span{
+    z-index: 4;
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+}
+
+spantext{
+    position: relative;
+    display: inline-flex;
+    width: 500px;
+    height: 20px;
+    margin: 0 15px;
+    perspective: 1000px;
+}
+span a{
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+
+}
+span a:before,
+span a:after{
+    position: absolute;
+    content: "REFRESH";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+span a:before{
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+    color: #000;
+    background: white;
+    transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    color: #CCC;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: 'ProximaNovaSemiBold', sans-serif;
+    letter-spacing: 10px;
+}
+
+
+.header-title1 {
+    z-index: 2;
+    position: relative;
+
+
+
+}
+
+.header-title2 {
+    z-index: 3;
+    position: relative;
+
+
+}
+
+.header-primary {
+    font-size: 1em;
+    font-weight: 700;
 }

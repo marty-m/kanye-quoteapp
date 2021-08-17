@@ -1,20 +1,22 @@
+</style>
+<div class='hero'>
+  <div class="hero-one"></div>
+  <div class="hero-two"></div>
+  <div class="center-container">
+    <br><br><br><br><br><br><br><br><br>
+    <div class="center-square">
+      <h1 class="header-title1"><p class="header-primary"><br><br><%= @parsed_response["quote"] %></p><br></h1>
+    </div>
+    <div class="center-square">
+      <h3 class="header-title2"><p class="header-primary">- Kanye Omari West</p></h3>
+      <br><br>
+    </div>
+  </div>
 
-<br><br>
-<div class="container-sm">
-  <figure class="text-center">
-    <blockquote class="blockquote">
-      <%= @parsed_response ["quote"] %>
-    </blockquote>
-    <figcaption class="blockquote-footer">
-      Kanye Omari West
-    </figcaption>
-  </figure>
-</div>
-<br> <br>
+  <div class="col text-center">
+  <span><%= link_to '', root_path, :method => :get %></span>
+  </div>
 
-
-<div class= "col text-center">
-  <%= link_to 'Refresh', root_path, class:"btn btn-primary", :method => :get %>
 </div>
 
 
