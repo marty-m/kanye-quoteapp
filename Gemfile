@@ -6,7 +6,7 @@ ruby '2.7.3'
 
 gem 'rails', '~> 6.1.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+
 
 gem 'puma', '~> 5.0'
 
@@ -40,6 +40,8 @@ group :development do
   gem 'web-console', '>= 4.1.0'
 
   #gem 'rack-mini-profiler', '~> 2.0'
+
+	gem 'sqlite3', '~> 1.4'
 end
 
 group :production do
